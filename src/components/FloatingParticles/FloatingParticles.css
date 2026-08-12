@@ -1,0 +1,47 @@
+.particles-layer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.particle-wrap {
+  position: absolute;
+  display: block;
+}
+
+.particle {
+  display: block;
+  border-radius: 9999px;
+  background: var(--p-color);
+  box-shadow: var(--p-glow);
+  opacity: var(--p-op);
+  animation: particle-float var(--p-duration) var(--p-ease) infinite;
+  animation-delay: var(--p-delay);
+}
+
+@keyframes particle-float {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+    opacity: var(--p-op);
+  }
+  30% {
+    transform: translate3d(var(--p-tx), calc(var(--p-ty) * -1), 0);
+    opacity: calc(var(--p-op) + 0.12);
+  }
+  65% {
+    transform: translate3d(calc(var(--p-tx) * -0.6), var(--p-ty), 0);
+    opacity: var(--p-op);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .particle {
+    animation: none;
+  }
+}
