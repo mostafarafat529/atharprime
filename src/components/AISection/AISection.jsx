@@ -145,7 +145,7 @@ const AISection = () => {
                       muted
                       loop
                       playsInline
-                      preload="metadata"
+                      preload="none"
                       controls={isPlaying}
                       onPlay={() => setIsPlaying(true)}
                       onPause={() => setIsPlaying(false)}

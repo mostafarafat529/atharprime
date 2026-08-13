@@ -88,12 +88,14 @@ const generate = (count) => {
 const FloatingParticles = () => {
   const [particles] = useState(() => generate(countForWidth()))
   const wrapRefs = useRef([])
+  const layerRef = useRef(null)
 
   useEffect(() => {
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return
 
     let raf = 0
     const onScroll = () => {
+      if (document.hidden) return
       cancelAnimationFrame(raf)
       raf = requestAnimationFrame(() => {
         const y = window.scrollY
@@ -105,16 +107,23 @@ const FloatingParticles = () => {
       })
     }
 
+    const onVisibilityChange = () => {
+      layerRef.current?.classList.toggle('is-hidden', document.hidden)
+    }
+
     onScroll()
+    onVisibilityChange()
     window.addEventListener('scroll', onScroll, { passive: true })
+    document.addEventListener('visibilitychange', onVisibilityChange)
     return () => {
       window.removeEventListener('scroll', onScroll)
+      document.removeEventListener('visibilitychange', onVisibilityChange)
       cancelAnimationFrame(raf)
     }
   }, [])
 
   return (
-    <div className="particles-layer" aria-hidden="true">
+    <div ref={layerRef} className="particles-layer" aria-hidden="true">
       {particles.map((p, i) => (
         <span
           key={i}

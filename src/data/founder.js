@@ -1,5 +1,5 @@
-import img01 from '../assets/images/founder/Gemini_Generated_Image_4s2bgz4s2bgz4s2b.png'
-import img02 from '../assets/images/founder/Gemini_Generated_Image_vkggwgvkggwgvkgg.png'
+import img01 from '../assets/images/founder/Gemini_Generated_Image_4s2bgz4s2bgz4s2b.webp'
+import img02 from '../assets/images/founder/Gemini_Generated_Image_vkggwgvkggwgvkgg.webp'
 
 /*
   نظام صور المؤسس — مصدر واحد لكل الصور.

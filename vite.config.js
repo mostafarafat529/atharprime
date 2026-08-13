@@ -6,4 +6,19 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineConfig({
   plugins: [react(),
             tailwindcss()],
+  build: {
+    rolldownOptions: {
+      output: {
+        manualChunks(id) {
+          if (id.includes('node_modules/react') || id.includes('node_modules/react-router')) {
+            return 'react'
+          }
+          if (id.includes('node_modules/framer-motion') || id.includes('node_modules/motion')) {
+            return 'motion'
+          }
+          return undefined
+        },
+      },
+    },
+  },
 })

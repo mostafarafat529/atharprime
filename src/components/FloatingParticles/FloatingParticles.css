@@ -40,6 +40,10 @@
   }
 }
 
+.particles-layer.is-hidden .particle {
+  animation-play-state: paused;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .particle {
     animation: none;

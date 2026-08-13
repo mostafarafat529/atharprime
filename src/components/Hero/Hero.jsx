@@ -23,6 +23,7 @@ const Hero = () => {
           src={heroImage}
           alt="تصميم داخلي فاخر من أعمال أثر برايم للتشطيبات والمقاولات العامة"
           loading="eager"
+          fetchPriority="high"
           className="h-full w-full object-cover object-center"
         />
         <div

@@ -2,9 +2,6 @@ import { lazy, Suspense, useEffect, useRef } from 'react'
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom'
 import { MotionConfig } from 'framer-motion'
 import Home from './pages/Home/Home'
-import Founder from './pages/Founder/Founder'
-import Projects from './pages/Projects/Projects'
-import ThreeD from './pages/ThreeD/ThreeD'
 import Navbar from './components/Navbar/Navbar'
 import FloatingSocials from './components/FloatingSocials/FloatingSocials'
 import Footer from './components/Footer/Footer'
@@ -12,6 +9,9 @@ import BackToTop from './components/BackToTop/BackToTop'
 import FloatingParticles from './components/FloatingParticles/FloatingParticles'
 import QuickNav from './components/QuickNav/QuickNav'
 
+const Founder = lazy(() => import('./pages/Founder/Founder'))
+const Projects = lazy(() => import('./pages/Projects/Projects'))
+const ThreeD = lazy(() => import('./pages/ThreeD/ThreeD'))
 const Journal = lazy(() => import('./pages/Journal/Journal'))
 const ArticlePage = lazy(() => import('./pages/Journal/ArticlePage'))
 
@@ -70,9 +70,30 @@ const App = () => {
         <QuickNav />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/founder" element={<Founder />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/3d" element={<ThreeD />} />
+          <Route
+            path="/founder"
+            element={
+              <Suspense fallback={pageFallback}>
+                <Founder />
+              </Suspense>
+            }
+          />
+          <Route
+            path="/projects"
+            element={
+              <Suspense fallback={pageFallback}>
+                <Projects />
+              </Suspense>
+            }
+          />
+          <Route
+            path="/3d"
+            element={
+              <Suspense fallback={pageFallback}>
+                <ThreeD />
+              </Suspense>
+            }
+          />
           <Route
             path="/journal"
             element={

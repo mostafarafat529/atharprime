@@ -7,9 +7,9 @@ import ThreeDProjectCard from './ThreeDProjectCard'
 const pad = (n) => String(n).padStart(2, '0')
 
 const featuredVariants = {
-  initial: { opacity: 0, scale: 0.985, filter: 'blur(6px)' },
-  animate: { opacity: 1, scale: 1, filter: 'blur(0px)' },
-  exit: { opacity: 0, scale: 0.985, filter: 'blur(6px)' },
+  initial: { opacity: 0, scale: 0.985 },
+  animate: { opacity: 1, scale: 1 },
+  exit: { opacity: 0, scale: 0.985 },
 }
 
 const ThreeDSection = () => {
