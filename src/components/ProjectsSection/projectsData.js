@@ -167,7 +167,7 @@ export const projects = [
     images: [imgGal04],
     image: imgGal04,
     is3D: false,
-    span: 'small',
+    span: 'wide',
     featured: true,
   },
   {
