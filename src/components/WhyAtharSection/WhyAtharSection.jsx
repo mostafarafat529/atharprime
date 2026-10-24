@@ -33,7 +33,7 @@ const WhyAtharSection = () => {
         aria-hidden="true"
         className="pointer-events-none absolute inset-x-0 top-16 select-none whitespace-nowrap text-center font-display text-[20vw] font-black leading-none tracking-tight text-text-primary/[0.04] md:text-[13rem]"
       >
-        ATHAR PRIME
+        انطلاقة
       </span>
 
       <div className="container-site relative py-24 md:py-28">
@@ -47,7 +47,7 @@ const WhyAtharSection = () => {
           <motion.div variants={fadeUp} className="mb-5 inline-flex items-center gap-3">
             <span className="h-px w-10 bg-accent-soft" />
             <p className="text-xs font-semibold tracking-widest text-accent-soft md:text-sm">
-              لماذا أثر برايم؟
+              لماذا انطلاقة؟
             </p>
             <span className="h-px w-10 bg-accent-soft" />
           </motion.div>
@@ -63,7 +63,7 @@ const WhyAtharSection = () => {
             variants={fadeUp}
             className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-text-primary/65 md:text-lg"
           >
-            في أثر برايم، لا نتعامل مع التشطيبات والمقاولات باعتبارها مجرد تنفيذ، بل نبدأ من فهم
+            في انطلاقة، لا نتعامل مع التشطيبات والمقاولات باعتبارها مجرد تنفيذ، بل نبدأ من فهم
             فكرتك، ونطوّرها إلى تصور واضح، ثم نحولها إلى مساحة متكاملة تجمع بين التصميم، جودة
             التنفيذ، ودقة التفاصيل.
           </motion.p>

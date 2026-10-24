@@ -69,7 +69,7 @@ const AboutSection = () => {
               variants={item}
               className="mt-6 text-base leading-relaxed text-text-primary/70 md:text-lg"
             >
-              في أثر برايم، نؤمن أن كل مساحة تحمل قصة تستحق أن تُروى بتفاصيل استثنائية. نحوّل الأفكار
+              في انطلاقة، نؤمن أن كل مساحة تحمل قصة تستحق أن تُروى بتفاصيل استثنائية. نحوّل الأفكار
               إلى مساحات متكاملة تجمع بين جمال التصميم، دقة التنفيذ، وجودة التفاصيل.
             </motion.p>
 
@@ -96,7 +96,7 @@ const AboutSection = () => {
             >
               <img
                 src={mainImage}
-                alt="مشروع تشطيبات ومقاولات من أثر برايم"
+                alt="مشروع تشطيبات ومقاولات من انطلاقة"
                 loading="lazy"
                 className="absolute inset-0 h-full w-full object-cover"
               />
@@ -104,7 +104,7 @@ const AboutSection = () => {
 
             <motion.img
               src={smallImage}
-              alt="تفاصيل تنفيذ معمارية من أثر برايم"
+              alt="تفاصيل تنفيذ معمارية من انطلاقة"
               loading="lazy"
               variants={smallImageVariants}
               className="absolute -bottom-4 -start-4 z-10 aspect-[3/4] w-36 rounded-xl border-4 border-bg-primary object-cover shadow-lg shadow-bg-primary/10 md:-bottom-6 md:-start-6 md:w-48 lg:-bottom-8 lg:-start-8 lg:w-56"
@@ -116,8 +116,8 @@ const AboutSection = () => {
             >
               <span className="h-9 w-1 rounded-full bg-gradient-to-b from-brand-400 to-ice-300" />
               <div>
-                <p className="font-display text-sm font-bold text-text-primary">نبني أثرًا يدوم</p>
-                <p className="text-xs text-text-primary/60">للتشطيبات والمقاولات العامة</p>
+                <p className="font-display text-sm font-bold text-text-primary">انطلاقة</p>
+                <p className="text-xs text-text-primary/60">نبني أثرًا يدوم</p>
               </div>
             </motion.div>
           </motion.div>

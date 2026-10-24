@@ -35,8 +35,8 @@ export const founderExtraImages = founderImages.slice(5)
 
 export const founder = {
   name: 'علي خالد عبيد',
-  role: 'مؤسس أثر برايم',
-  tagline: 'نصنع المساحات التي تترك أثرًا.',
+  role: 'مؤسس انطلاقة',
+  tagline: 'نصنع المساحات التي تترك بصمة.',
   nameLatin: 'ALI KHALED OBAID',
 }
 

@@ -72,7 +72,15 @@ const LocationSection = () => {
             variants={fadeUp}
             className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-text-primary/65 md:text-lg"
           >
-            إحنا شغالين في جميع المحافظات 😊 وده مقر الشركة لو حبيت تنورنا:
+            📍 من قلب الشيخ زايد – الجيزة
+            <br />
+            هنا بنحوّل فكرتك لتصميم… والتصميم لواقع ✨
+            <br />
+            🏡 تصميم 3D | تشطيب | تنفيذ
+            <br />
+            📌 ثاني الشيخ زايد – منطقة الأمل
+            <br />
+            ✨ مستنيينكم في انطلاقة… وخلي بداية بيتك صح.
           </motion.p>
         </motion.div>
 
@@ -103,14 +111,27 @@ const LocationSection = () => {
                     <p className="text-xs font-semibold tracking-wide text-accent-soft">
                       {row.label}
                     </p>
-                    {row.lines.map((line) => (
-                      <p
-                        key={line}
-                        className="mt-1 text-sm leading-relaxed text-text-primary/70 md:text-base"
-                      >
-                        {line}
-                      </p>
-                    ))}
+                    {row.lines.map((line) => {
+                      const isAddress = row.id === 'address'
+                      return isAddress ? (
+                        <a
+                          key={line}
+                          href={locationData.mapsLink}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="mt-1 block text-sm leading-relaxed text-text-primary/70 transition-colors duration-300 hover:text-accent-soft md:text-base"
+                        >
+                          {line}
+                        </a>
+                      ) : (
+                        <p
+                          key={line}
+                          className="mt-1 text-sm leading-relaxed text-text-primary/70 md:text-base"
+                        >
+                          {line}
+                        </p>
+                      )
+                    })}
                   </div>
                 </div>
               ))}
@@ -136,7 +157,7 @@ const LocationSection = () => {
 
               <iframe
                 src={locationData.mapsEmbed}
-                title="موقع أثر برايم على خرائط جوجل"
+                title="موقع انطلاقة على خرائط جوجل"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
                 allowFullScreen
@@ -146,7 +167,7 @@ const LocationSection = () => {
 
               <div className="pointer-events-none absolute start-4 top-4 z-10 flex items-center gap-2 rounded-full border border-text-primary/15 bg-bg-primary/85 px-4 py-2 backdrop-blur-md">
                 <MapPin className="h-3.5 w-3.5 text-accent-soft" />
-                <span className="text-xs font-bold text-text-primary">مقر أثر برايم</span>
+                <span className="text-xs font-bold text-text-primary">مقر انطلاقة</span>
               </div>
             </div>
           </motion.div>

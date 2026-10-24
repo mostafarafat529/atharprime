@@ -161,7 +161,7 @@ const AISection = () => {
                     <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-accent-soft opacity-75" />
                     <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-accent-soft" />
                   </span>
-                  <span className="text-[11px] font-semibold text-text-primary">رؤية أثر برايم</span>
+                  <span className="text-[11px] font-semibold text-text-primary">رؤية انطلاقة</span>
                 </div>
 
                 <div className="pointer-events-none absolute end-4 top-4 z-10 flex items-center gap-1.5 rounded-full border border-text-primary/10 bg-bg-primary/80 px-3 py-1.5 backdrop-blur-md">

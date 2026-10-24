@@ -1,4 +1,4 @@
-/* ============ Athar Journal — Data File ============
+/* ============ مجلة انطلاقة — Data File ============
    كل الصور مستوردة من ملفات موجودة فعلًا داخل src/assets/images/
    لا يوجد أي path وهمي. عند إضافة مقال جديد أضفه في نهاية المصفوفة
    مع صورة من الصور المستوردة بالفعل أو استورد صورة جديدة من المشروع. */
@@ -11,11 +11,11 @@ import img3D04 from '../assets/images/3d/Annotation 2026-08-10 022246.webp'
 import img2D01 from '../assets/images/2d/WhatsApp Image 2026-08-09 at 8.54.30 AM (3).webp'
 import img2D02 from '../assets/images/2d/WhatsApp Image 2026-08-09 at 8.54.26 AM.webp'
 import img2D03 from '../assets/images/2d/WhatsApp Image 2026-08-09 at 8.54.29 AM (1).webp'
-import img2D04 from '../assets/images/2d/WhatsApp Image 2026-08-09 at 4.11.40 AM.webp'
+import img2D04 from '../assets/images/2d/WhatsApp Image 2026-08-09 at 8.54.30 AM (2).webp'
 
-import imgGal01 from '../assets/images/gallery/WhatsApp Image 2026-08-09 at 4.04.23 AM (4).webp'
-import imgGal02 from '../assets/images/gallery/WhatsApp Image 2026-08-09 at 4.04.22 AM (2).webp'
-import imgGal03 from '../assets/images/gallery/WhatsApp Image 2026-08-09 at 4.04.23 AM (2).webp'
+import imgGal01 from '../assets/images/انطلاقة/WhatsApp Image 2026-10-15 at 8.57.25 PM (1).jpeg'
+import imgGal02 from '../assets/images/انطلاقة/WhatsApp Image 2026-10-15 at 8.57.25 PM.jpeg'
+import imgGal03 from '../assets/images/انطلاقة/WhatsApp Image 2026-10-15 at 8.57.30 PM.jpeg'
 
 import imgHero01 from '../assets/images/hero/ChatGPT Image Aug 10, 2026, 02_45_11 AM.webp'
 import imgHero02 from '../assets/images/hero/ChatGPT Image Aug 10, 2026, 02_44_14 AM.webp'
@@ -36,8 +36,8 @@ import house12 from '../assets/images/house/WhatsApp Image 2026-08-10 at 6.40.03
 export const journalFilters = ['الكل', 'التصميم', 'التشطيبات', 'الإضاءة', 'الخامات', '3D', 'إلهام', 'نصائح']
 
 export const journalAuthor = {
-  name: 'أثر برايم',
-  nameLatin: 'Athar Prime',
+  name: 'انطلاقة',
+  nameLatin: 'انطلاقة',
   role: 'فريق التصميم والتنفيذ',
 }
 
@@ -53,7 +53,7 @@ export const journalArticles = [
     date: '12 أغسطس 2026',
     image: imgHero01,
     featured: true,
-    keywords: ['تصميم منزل', 'التخطيط قبل التنفيذ', 'الديكور الداخلي', 'أثر برايم'],
+    keywords: ['تصميم منزل', 'التخطيط قبل التنفيذ', 'الديكور الداخلي', 'انطلاقة'],
     content: [
       {
         type: 'p',
@@ -83,7 +83,7 @@ export const journalArticles = [
         type: 'p',
         text: 'الخلاصة: منزلك يبدأ من قرار، لا من معرض صور. خذ وقتك في بناء الصورة الذهنية أولًا، ثم دع فريق التنفيذ يحوّلها إلى خطوط ومقاسات ومواد.',
       },
-      { type: 'cta', to: '/projects', label: 'شاهد مشاريعنا' },
+      { type: 'cta', to: '/#services', label: 'استكشف خدماتنا' },
     ],
   },
   {
@@ -165,7 +165,7 @@ export const journalArticles = [
         type: 'p',
         text: 'باختصار: تحتاج الاثنين معًا — الدقة في 2D لتجنب الأخطاء، والإحساس في 3D لتجنب المفاجآت.',
       },
-      { type: 'cta', to: '/projects', label: 'شاهد مشاريعنا' },
+      { type: 'cta', to: '/#services', label: 'استكشف خدماتنا' },
     ],
   },
   {
@@ -208,7 +208,7 @@ export const journalArticles = [
         type: 'p',
         text: 'أما بقية الأخطاء — عدم مراقبة المراحل، تأخير استلام العيوب، شراء الخامات بعشوائية، وإهمال التهوية قبل التركيبات الخشبية — فهي امتداد لنفس الفكرة: التشطيب الجيد ابن تخطيط جيد.',
       },
-      { type: 'cta', to: '/projects', label: 'شاهد مشاريعنا' },
+      { type: 'cta', to: '/#services', label: 'استكشف خدماتنا' },
     ],
   },
   {
@@ -246,7 +246,7 @@ export const journalArticles = [
         type: 'p',
         text: 'تذكر أن الإضاءة تُخطط في مرحلة الكهرباء، لا في مرحلة التركيب. قرار مبكر بمواضع الأنوار يعني منزلًا أكثر راحة بتكلفة أقل.',
       },
-      { type: 'cta', to: '/3d', label: 'استكشف تصميمات 3D' },
+      { type: 'cta', to: '/#services', label: 'استكشف خدماتنا' },
     ],
   },
   {
@@ -280,7 +280,7 @@ export const journalArticles = [
         text: 'لون سائد للجدران، ولون ثانوي للأثاث، ولمسة لون ثالثة للإكسسوارات. هذا التوزيع يمنح الغرفة عمقًا بلا فوضى، ويسمح لك بتغيير المزاج لاحقًا بتكلفة بسيطة.',
       },
       { type: 'img', src: house07, alt: 'غرفة معيشة بألوان حوائط هادئة', caption: 'اللون الهادئ يمنح الخلفية ويترك البطولة للأثاث.' },
-      { type: 'cta', to: '/founder', label: 'تعرف على مؤسس Athar Prime' },
+      { type: 'cta', to: '/founder', label: 'تعرف على مؤسس انطلاقة' },
     ],
   },
   {
@@ -318,7 +318,7 @@ export const journalArticles = [
         type: 'p',
         text: 'القاعدة: اختر الأرضية بما يخدم الحياة داخل المنزل، لا بما يبدو جيدًا في صورة العرض.',
       },
-      { type: 'cta', to: '/projects', label: 'شاهد مشاريعنا' },
+      { type: 'cta', to: '/#services', label: 'استكشف خدماتنا' },
     ],
   },
   {
@@ -351,7 +351,7 @@ export const journalArticles = [
         type: 'p',
         text: 'تذكر أخيرًا: الزحام البصري أصغر عدو للمساحات الصغيرة. كل عنصر إضافي يقلّل شعور الاتساع، فاجعل كل قطعة في المنزل تحمل وظيفة أو جمالًا واضحًا.',
       },
-      { type: 'cta', to: '/founder', label: 'تعرف على مؤسس Athar Prime' },
+      { type: 'cta', to: '/founder', label: 'تعرف على مؤسس انطلاقة' },
     ],
   },
   {
@@ -389,7 +389,7 @@ export const journalArticles = [
         type: 'p',
         text: 'ومهما تبدلت الاتجاهات، تبقى قاعدة واحدة ثابتة: الاتجاهات إلهام لا بديل عن نمط حياتك. صمم منزلك ليعيش معك، لا ليلاحق الصورة.',
       },
-      { type: 'cta', to: '/projects', label: 'شاهد مشاريعنا' },
+      { type: 'cta', to: '/#services', label: 'استكشف خدماتنا' },
     ],
   },
   {
@@ -461,7 +461,7 @@ export const journalArticles = [
         type: 'p',
         text: 'الخلاصة بسيطة وعميقة: التخطيط الجيد ليس تكلفة إضافية، بل أول توفير تتحقق به في مشروعك.',
       },
-      { type: 'cta', to: '/projects', label: 'شاهد مشاريعنا' },
+      { type: 'cta', to: '/#services', label: 'استكشف خدماتنا' },
     ],
   },
   {
@@ -499,7 +499,7 @@ export const journalArticles = [
         type: 'p',
         text: 'النصيحة العملية: اكتب توقعاتك بنفس دقة كتابة المقاول للمواصفات، وسيصل الطرفان إلى صورة واحدة قبل أن تُصرف أول جنيه.',
       },
-      { type: 'cta', to: '/founder', label: 'تعرف على مؤسس Athar Prime' },
+      { type: 'cta', to: '/founder', label: 'تعرف على مؤسس انطلاقة' },
     ],
   },
   {
@@ -538,7 +538,7 @@ export const journalArticles = [
         type: 'p',
         text: 'وفي النهاية تأتي اللحظة التي صنعناها جميعًا من أجلها: التسليم. مساحة مكتملة، نظيفة، جاهزة للحياة — تحمل أثرًا بقدر ما حملت خططًا.',
       },
-      { type: 'cta', to: '/founder', label: 'تعرف على مؤسس Athar Prime' },
+      { type: 'cta', to: '/founder', label: 'تعرف على مؤسس انطلاقة' },
       { type: 'cta', to: '/3d', label: 'استكشف تصميمات 3D' },
     ],
   },

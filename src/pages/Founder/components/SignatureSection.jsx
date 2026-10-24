@@ -72,7 +72,7 @@ const SignatureSection = () => {
             dir="ltr"
             className="mt-2 text-[11px] font-semibold uppercase tracking-[0.35em] text-text-primary/45"
           >
-            Founder & Visionary — Athar Prime
+            Founder & Visionary — انطلاقة
           </motion.p>
 
           <motion.div variants={item} className="mx-auto my-8 h-px w-40 bg-accent-soft/40" />
@@ -87,7 +87,7 @@ const SignatureSection = () => {
               to="/"
               className="group inline-flex items-center gap-3 rounded-full bg-accent px-8 py-4 font-display text-base font-bold text-bg-primary transition-all duration-300 hover:-translate-y-0.5 hover:bg-accent-soft hover:shadow-[0_14px_34px_-10px_rgba(16,96,160,0.6)] active:scale-[0.97]"
             >
-              <span>اكتشف أثر برايم</span>
+              <span>اكتشف انطلاقة</span>
               <span
                 aria-hidden="true"
                 className="text-lg leading-none transition-transform duration-300 group-hover:-translate-x-1.5"

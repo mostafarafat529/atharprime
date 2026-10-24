@@ -2,9 +2,9 @@ import { Fragment } from 'react'
 import './BrandMarquee.css'
 
 const items = [
-  { text: 'ATHAR PRIME', type: 'brand', lang: 'en' },
+  { text: 'انطلاقة', type: 'brand', lang: 'ar' },
   { text: 'INTERIOR FINISHING & GENERAL CONTRACTING', lang: 'en' },
-  { text: 'أثر برايم', type: 'brand' },
+  { text: 'انطلاقة', type: 'brand' },
   { text: 'تشطيبات ومقاولات عامة' },
   { text: 'تصميم داخلي' },
   { text: 'تصميم ثلاثي الأبعاد' },
@@ -34,7 +34,7 @@ const renderGroup = (hidden) => (
 
 const BrandMarquee = () => {
   return (
-    <section className="brand-marquee" aria-label="أثر برايم — تشطيبات ومقاولات عامة">
+    <section className="brand-marquee" aria-label="انطلاقة — تشطيبات ومقاولات عامة">
       <div className="brand-marquee__viewport">
         <div className="brand-marquee__track" dir="ltr">
           {Array.from({ length: 4 }, (_, index) => (

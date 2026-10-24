@@ -1,13 +1,12 @@
 import { useLocation } from 'react-router-dom'
 import { NavLink } from 'react-router-dom'
-import { Box, Home, LayoutGrid, MessageCircle, Newspaper, UserRound } from 'lucide-react'
+import { Box, Home, MessageCircle, Newspaper, UserRound } from 'lucide-react'
 
 const quickItems = [
   { key: 'home', label: 'الرئيسية', to: '/', Icon: Home },
   { key: 'founder', label: 'المؤسس', to: '/founder', Icon: UserRound },
-  { key: 'projects', label: 'أعمالنا', to: '/projects', Icon: LayoutGrid },
   { key: '3d', label: 'التصميم 3D', to: '/3d', Icon: Box },
-  { key: 'journal', label: 'Athar Journal', to: '/journal', Icon: Newspaper },
+  { key: 'journal', label: 'الأسئلة', to: '/journal', Icon: Newspaper },
   { key: 'contact', label: 'تواصل معنا', to: '/#contact', Icon: MessageCircle },
 ]
 

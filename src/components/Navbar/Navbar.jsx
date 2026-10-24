@@ -5,7 +5,7 @@ import { Menu, Phone, X } from 'lucide-react'
 import { siteConfig } from '../../data/config'
 import ThemeToggle from '../ThemeToggle/ThemeToggle'
 import MobileNav from './MobileNav'
-import logo from '../../assets/logo/WhatsApp Image 2026-08-08 at 3.25.55 PM.jpeg'
+import logo from '../../assets/logo/WhatsApp Image 2026-10-15 at 8.57.32 PM (1).jpeg'
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false)
@@ -74,7 +74,7 @@ const Navbar = () => {
         >
           <img
             src={logo}
-            alt="شعار أثر برايم"
+            alt="شعار انطلاقة"
             className={`h-12 w-12 rounded-xl object-cover object-center ring-1 transition-all duration-300 group-hover:ring-accent-soft ${brandRing} md:h-14 md:w-14`}
           />
           <span className="hidden flex-col leading-tight sm:flex">

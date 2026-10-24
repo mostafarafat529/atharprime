@@ -5,7 +5,6 @@ import {
   Box,
   ChevronLeft,
   Home,
-  LayoutGrid,
   MapPin,
   MessageCircle,
   Newspaper,
@@ -16,10 +15,9 @@ import {
 
 const NAV_ITEMS = [
   { key: 'home', label: 'الرئيسية', hint: 'الصفحة الرئيسية', to: '/', Icon: Home },
-  { key: 'projects', label: 'المشاريع', hint: 'أعمالنا المنفذة', to: '/projects', Icon: LayoutGrid },
   { key: '3d', label: 'التصميمات 3D', hint: 'تصور ثلاثي الأبعاد', to: '/3d', Icon: Box },
   { key: 'founder', label: 'المؤسس', hint: 'قصة المؤسس', to: '/founder', Icon: UserRound },
-  { key: 'journal', label: 'Athar Journal', hint: 'مقالات ورؤى', to: '/journal', Icon: Newspaper },
+  { key: 'journal', label: 'الأسئلة الشائعة', hint: 'إجابات سريعة', to: '/journal', Icon: Newspaper },
   { key: 'contact', label: 'تواصل معنا', hint: 'أرسل لنا رسالتك', to: '/#contact', Icon: MessageCircle },
   { key: 'location', label: 'الموقع', hint: 'عنوان فرعنا', to: '/#location', Icon: MapPin },
 ]
@@ -106,7 +104,7 @@ const MobileNav = ({ open, onClose, phone, phoneHref }) => {
           <div className="flex items-center justify-between px-6 pb-2 pt-3">
             <div>
               <p className="font-display text-lg font-extrabold leading-tight text-text-primary">القائمة</p>
-              <p className="mt-0.5 text-[11px] font-semibold tracking-[0.2em] text-accent-soft">ATHAR PRIME</p>
+              <p className="mt-0.5 text-[11px] font-semibold tracking-[0.2em] text-accent-soft">انطلاقة</p>
             </div>
             <button
               type="button"

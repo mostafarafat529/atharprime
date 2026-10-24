@@ -10,16 +10,14 @@ import FloatingParticles from './components/FloatingParticles/FloatingParticles'
 import QuickNav from './components/QuickNav/QuickNav'
 
 const Founder = lazy(() => import('./pages/Founder/Founder'))
-const Projects = lazy(() => import('./pages/Projects/Projects'))
 const ThreeD = lazy(() => import('./pages/ThreeD/ThreeD'))
 const Journal = lazy(() => import('./pages/Journal/Journal'))
-const ArticlePage = lazy(() => import('./pages/Journal/ArticlePage'))
 
 const pageFallback = (
   <div className="flex min-h-screen items-center justify-center bg-bg-primary">
     <div className="flex flex-col items-center gap-4">
       <span className="h-10 w-10 animate-spin rounded-full border-2 border-text-primary/15 border-t-accent-soft" />
-      <p className="text-xs font-semibold tracking-widest text-text-primary/50">ATHAR PRIME</p>
+      <p className="text-xs font-semibold tracking-widest text-text-primary/50">انطلاقة</p>
     </div>
   </div>
 )
@@ -79,14 +77,6 @@ const App = () => {
             }
           />
           <Route
-            path="/projects"
-            element={
-              <Suspense fallback={pageFallback}>
-                <Projects />
-              </Suspense>
-            }
-          />
-          <Route
             path="/3d"
             element={
               <Suspense fallback={pageFallback}>
@@ -99,14 +89,6 @@ const App = () => {
             element={
               <Suspense fallback={pageFallback}>
                 <Journal />
-              </Suspense>
-            }
-          />
-          <Route
-            path="/journal/:slug"
-            element={
-              <Suspense fallback={pageFallback}>
-                <ArticlePage />
               </Suspense>
             }
           />

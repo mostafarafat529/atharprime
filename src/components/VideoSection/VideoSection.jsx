@@ -1,8 +1,7 @@
 import { useRef, useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import { Play } from 'lucide-react'
-import adVideo from '../../assets/videos/ads/WhatsApp Video 2026-08-09 at 4.11.40 AM (2).mp4'
-import adVideoPoster from '../../assets/videos/posters/WhatsApp Video 2026-08-09 at 4.11.40 AM (2).webp'
+import founderVideo from '../../assets/videos/founder/WhatsApp Video 2026-08-13 at 1.01.47 AM.mp4'
 
 const container = {
   hidden: {},
@@ -72,7 +71,7 @@ const VideoSection = () => {
             variants={fadeUp}
             className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-text-primary/65 md:text-lg"
           >
-            في أثر برايم، لا نكتفي بتنفيذ المساحات؛ نحوّل الأفكار والتصورات إلى تفاصيل حقيقية تجمع
+            في انطلاقة، لا نكتفي بتنفيذ المساحات؛ نحوّل الأفكار والتصورات إلى تفاصيل حقيقية تجمع
             بين جمال التصميم، دقة التنفيذ، وجودة التشطيب.
           </motion.p>
         </motion.div>
@@ -93,8 +92,7 @@ const VideoSection = () => {
             <div className="relative aspect-video w-full overflow-hidden rounded-2xl border border-text-primary/10 bg-bg-card shadow-2xl shadow-bg-primary/40">
               <video
                 ref={videoRef}
-                src={adVideo}
-                poster={adVideoPoster}
+                src={founderVideo}
                 className={`h-full w-full object-cover transition-transform duration-700 ease-out ${
                   isPlaying ? '' : 'group-hover:scale-[1.03]'
                 }`}
@@ -104,7 +102,7 @@ const VideoSection = () => {
                 onPlay={() => setIsPlaying(true)}
                 onPause={() => setIsPlaying(false)}
                 onEnded={() => setIsPlaying(false)}
-                aria-label="فيديو تعريفي لأثر برايم للتشطيبات والمقاولات العامة"
+                aria-label="فيديو توضيحي عن رؤية وانطلاقة"
               />
 
               <AnimatePresence>
@@ -144,7 +142,7 @@ const VideoSection = () => {
           >
             <div className="flex items-center gap-3">
               <span className="h-px w-8 bg-accent-soft" />
-              <p className="text-text-primary/60">أثر برايم | من الفكرة إلى التنفيذ</p>
+              <p className="text-text-primary/60">انطلاقة | من الفكرة إلى التنفيذ</p>
             </div>
             <div className="hidden items-center gap-3 sm:flex">
               <p className="text-accent-soft">مشاهدة الفيديو</p>

@@ -50,7 +50,7 @@ const VisionToRealitySection = () => {
             <div className="group relative aspect-[4/3] overflow-hidden rounded-2xl shadow-2xl shadow-bg-primary/30 ring-1 ring-text-primary/10">
               <img
                 src={founderImageSlots.visionMain}
-                alt="متابعة تنفيذ في موقع عمل أثر برايم"
+                alt="متابعة تنفيذ في موقع عمل انطلاقة"
                 loading="lazy"
                 className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]"
               />
@@ -107,7 +107,7 @@ const VisionToRealitySection = () => {
               className="mt-6 max-w-xl text-base leading-relaxed text-text-primary/70 md:text-lg"
             >
               المسافة بين الفكرة والإنجاز ليست مسافة هينة؛ لكنها تُختصر حين يكون التنفيذ مبنيًا على
-              رؤية واضحة. هذه الرحلة هي جوهر عمل أثر برايم:
+              رؤية واضحة. هذه الرحلة هي جوهر عمل انطلاقة:
             </motion.p>
 
             <motion.div variants={item} className="mt-10 space-y-6">

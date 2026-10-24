@@ -21,7 +21,7 @@ const Hero = () => {
       <div className="absolute inset-0">
         <img
           src={heroImage}
-          alt="تصميم داخلي فاخر من أعمال أثر برايم للتشطيبات والمقاولات العامة"
+          alt="تصميم داخلي فاخر من أعمال انطلاقة للتشطيبات والمقاولات العامة"
           loading="eager"
           fetchPriority="high"
           className="h-full w-full object-cover object-center"
@@ -50,8 +50,8 @@ const Hero = () => {
           />
           <motion.div variants={item} className="mb-6 flex items-center gap-4">
             <span className="h-px w-12 bg-accent-soft" />
-            <p className="text-xs font-semibold tracking-widest text-accent-soft md:text-sm">
-              {siteConfig.heroEyebrow}
+            <p className="text-xs font-semibold tracking-[0.2em] text-accent-soft md:text-sm">
+              مقاولات · تشطيبات · تصميم داخلي
             </p>
           </motion.div>
 
@@ -59,33 +59,8 @@ const Hero = () => {
             variants={item}
             className="font-display text-4xl font-extrabold leading-[1.3] text-text-primary sm:text-5xl md:text-6xl md:leading-[1.22] lg:text-7xl"
           >
-            نصنع المساحات التي تترك <span className="text-accent-soft">أثرًا</span>
+            نصنع المساحات التي تترك <span className="text-accent-soft">انطلاقة</span>
           </motion.h1>
-
-          <motion.p
-            variants={item}
-            className="mt-6 max-w-xl text-base leading-relaxed text-text-primary/75 md:text-lg"
-          >
-            في أثر برايم، نحوّل الأفكار إلى مساحات متكاملة تجمع بين جودة التنفيذ، دقة التفاصيل، وأناقة
-            التصميم.
-          </motion.p>
-
-          <motion.div variants={item} className="mt-10 flex flex-col gap-4 sm:flex-row">
-            <a
-              href="#contact"
-              className="group inline-flex w-full items-center justify-center gap-2 rounded-full bg-brand-500 px-8 py-4 text-sm font-bold text-white shadow-lg shadow-brand-500/25 transition-all duration-300 hover:-translate-y-0.5 hover:bg-brand-400 hover:shadow-brand-400/40 active:scale-[0.97] sm:w-auto"
-            >
-              ابدأ مشروعك
-              <ArrowLeft className="h-4 w-4 transition-transform duration-300 group-hover:-translate-x-1.5" />
-            </a>
-            <a
-              href="#projects"
-              className="group inline-flex w-full items-center justify-center gap-2 rounded-full border border-text-primary/25 bg-text-primary/5 px-8 py-4 text-sm font-bold text-text-primary backdrop-blur-sm transition-all duration-300 hover:-translate-y-0.5 hover:border-text-primary/60 hover:bg-text-primary/10 active:scale-[0.97] sm:w-auto"
-            >
-              استكشف أعمالنا
-              <ArrowDown className="h-4 w-4 transition-transform duration-300 group-hover:translate-y-1.5" />
-            </a>
-          </motion.div>
         </div>
       </motion.div>
 

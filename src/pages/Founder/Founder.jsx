@@ -1,6 +1,5 @@
 import FounderHero from './components/FounderHero'
 import StorySection from './components/StorySection'
-import FounderTourSection from './components/FounderTourSection'
 import PhilosophySection from './components/PhilosophySection'
 import VisionToRealitySection from './components/VisionToRealitySection'
 import TeamSection from './components/TeamSection'
@@ -12,7 +11,6 @@ const Founder = () => {
     <main className="bg-bg-primary">
       <FounderHero />
       <StorySection />
-      <FounderTourSection />
       <PhilosophySection />
       <VisionToRealitySection />
       <TeamSection />

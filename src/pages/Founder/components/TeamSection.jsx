@@ -40,7 +40,7 @@ const TeamSection = () => {
               variants={item}
               className="font-display text-4xl font-extrabold leading-[1.25] text-text-primary md:text-5xl"
             >
-              وراء كل أثر
+              وراء كل انطلاقة
               <br />
               <span className="text-accent-soft">فريق</span>
             </motion.h2>
@@ -77,7 +77,7 @@ const TeamSection = () => {
               <div className="group relative aspect-[16/11] overflow-hidden rounded-2xl shadow-2xl shadow-bg-primary/30 ring-1 ring-text-primary/10">
                 <img
                   src={founderImageSlots.teamMain}
-                  alt="تفاصيل من أعمال أثر برايم"
+                  alt="تفاصيل من أعمال انطلاقة"
                   loading="lazy"
                   className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]"
                 />
@@ -90,7 +90,7 @@ const TeamSection = () => {
                 transition={{ duration: 0.8, delay: 0.3, ease: 'easeOut' }}
                 className="absolute -bottom-7 start-4 rounded-xl border border-text-primary/10 bg-bg-primary/90 px-6 py-4 backdrop-blur-md md:start-8"
               >
-                <p className="font-display text-lg font-extrabold text-accent-soft">أثر برايم</p>
+                <p className="font-display text-lg font-extrabold text-accent-soft">انطلاقة</p>
                 <p className="mt-0.5 text-xs text-text-secondary">فريق واحد، معيار واحد</p>
               </motion.div>
 
@@ -100,7 +100,7 @@ const TeamSection = () => {
                     <img
                       key={src}
                       src={src}
-                      alt={`صور إضافية من أعمال أثر برايم ${i + 1}`}
+                      alt={`صور إضافية من أعمال انطلاقة ${i + 1}`}
                       loading="lazy"
                       className="aspect-[4/3] w-full rounded-xl object-cover ring-1 ring-text-primary/10 transition-transform duration-700 ease-out hover:scale-[1.03]"
                     />

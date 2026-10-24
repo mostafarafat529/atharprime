@@ -31,7 +31,7 @@ const VisionSection = () => {
           <motion.div variants={item} className="mb-7 flex items-center justify-center gap-3">
             <span className="h-px w-10 bg-accent-soft" />
             <span className="text-xs font-semibold text-text-secondary md:text-sm">
-              رؤية علي خالد عبيد لأثر برايم
+              رؤية علي خالد عبيد لانطلاقة
             </span>
             <span className="h-px w-10 bg-accent-soft" />
           </motion.div>
@@ -40,7 +40,7 @@ const VisionSection = () => {
             variants={item}
             className="font-display text-[clamp(1.5rem,4vw,3rem)] font-extrabold leading-[1.5] text-text-primary"
           >
-            «أن يكون <span className="text-accent-soft">أثر برايم</span> اسمًا يُذكر أمام الجودة؛
+            «أن يكون <span className="text-accent-soft">انطلاقة</span> اسمًا يُذكر أمام الجودة؛
             تثق به العين قبل أن تسمع عنه، ويبقى أثره واضحًا في كل مساحة عملنا عليها.»
           </motion.blockquote>
 

@@ -2,18 +2,16 @@ import { Clock, MapPin, Phone } from 'lucide-react'
 import { Link, NavLink, useLocation } from 'react-router-dom'
 import { siteConfig } from '../../data/config'
 import { WhatsAppIcon, FacebookIcon } from '../FloatingSocials/FloatingSocials'
-import logo from '../../assets/logo/WhatsApp Image 2026-08-08 at 3.25.55 PM.jpeg'
+import logo from '../../assets/logo/WhatsApp Image 2026-10-15 at 8.57.32 PM (1).jpeg'
 
 const browseLinks = [
   { label: 'الرئيسية', href: '#hero' },
   { label: 'من نحن', href: '#about' },
   { label: 'خدماتنا', href: '#services' },
-  { label: 'مشاريعنا', href: '#projects' },
 ]
 
 const moreLinks = [
   { label: 'قبل وبعد التنفيذ', href: '#before-after' },
-  { label: 'أعمالنا', to: '/projects' },
   { label: 'التصميم 3D', to: '/3d' },
   { label: 'تواصل معنا', href: '#contact' },
   { label: 'المؤسس', to: '/founder' },
@@ -41,6 +39,7 @@ const SectionLink = ({ href, className, children }) => {
 const Footer = () => {
   const phone = siteConfig.contact.phone
   const address = siteConfig.contact.address
+  const mapsLink = siteConfig.contact.mapsLink
   const hours = siteConfig.contact.hours
 
   const socials = [
@@ -68,7 +67,7 @@ const Footer = () => {
     <>
       <img
         src={logo}
-        alt="شعار أثر برايم"
+        alt="شعار انطلاقة"
         className="h-12 w-12 rounded-xl object-cover object-center ring-1 ring-text-primary/15 transition-all duration-300 group-hover:ring-accent-soft"
       />
       <span className="flex flex-col leading-tight">
@@ -90,7 +89,7 @@ const Footer = () => {
         aria-hidden="true"
         className="pointer-events-none absolute inset-x-0 -bottom-8 select-none whitespace-nowrap text-center font-display text-[17vw] font-black leading-none tracking-tight text-text-primary/[0.04] md:text-[12rem] lg:text-[16rem]"
       >
-        ATHAR PRIME
+        انطلاقة
       </span>
 
       <div className="container-site relative py-12 lg:py-14">
@@ -190,7 +189,14 @@ const Footer = () => {
               {address && (
                 <li className="flex items-start gap-2.5">
                   <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-accent-soft" />
-                  <span>{address}</span>
+                  <a
+                    href={mapsLink || '#'}
+                    target={mapsLink ? '_blank' : undefined}
+                    rel={mapsLink ? 'noopener noreferrer' : undefined}
+                    className="link-underline transition-colors hover:text-accent-soft"
+                  >
+                    {address}
+                  </a>
                 </li>
               )}
               {hours && (
@@ -206,8 +212,8 @@ const Footer = () => {
 
       <div className="relative border-t border-text-primary/10">
         <div className="container-site flex flex-col items-center justify-between gap-3 py-4 text-xs text-text-primary/50 sm:flex-row">
-          <span dir="ltr">© {new Date().getFullYear()} Athar Prime. All rights reserved.</span>
-          <span>صُنع بعناية بواسطة أثر برايم</span>
+          <span dir="ltr">© {new Date().getFullYear()} انطلاقة. جميع الحقوق محفوظة.</span>
+          <span>صُنع بعناية بواسطة انطلاقة</span>
         </div>
       </div>
     </footer>

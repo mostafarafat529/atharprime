@@ -3,10 +3,8 @@ import BrandMarquee from '../../components/BrandMarquee/BrandMarquee'
 import AboutSection from '../../components/AboutSection/AboutSection'
 import VideoSection from '../../components/VideoSection/VideoSection'
 import ServicesSection from '../../components/ServicesSection/ServicesSection'
-import ProjectsSection from '../../components/ProjectsSection/ProjectsSection'
-import InsideTourSection from '../../components/InsideTourSection/InsideTourSection'
 import ThreeDSection from '../../components/ThreeDSection/ThreeDSection'
-import AISection from '../../components/AISection/AISection'
+// import AISection from '../../components/AISection/AISection'
 import BeforeAfterSection from '../../components/BeforeAfterSection/BeforeAfterSection'
 import ProcessSection from '../../components/ProcessSection/ProcessSection'
 import WhyAtharSection from '../../components/WhyAtharSection/WhyAtharSection'
@@ -22,11 +20,9 @@ const Home = () => {
         <AboutSection />
         <VideoSection />
         <ServicesSection />
-        <ProjectsSection />
-        <InsideTourSection />
         <BeforeAfterSection />
         <ThreeDSection />
-        <AISection />
+        {/* <AISection /> */}
         <ProcessSection />
         <WhyAtharSection />
         <LocationSection />

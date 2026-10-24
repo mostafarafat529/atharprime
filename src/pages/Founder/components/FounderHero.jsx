@@ -44,7 +44,7 @@ const FounderHero = () => {
               dir="ltr"
               className="text-[11px] font-semibold uppercase tracking-[0.3em] text-text-secondary md:text-xs"
             >
-              Founder — Athar Prime
+              Founder — انطلاقة
             </span>
           </motion.div>
 
@@ -101,7 +101,7 @@ const FounderHero = () => {
             <div className="group relative aspect-[4/5] overflow-hidden rounded-2xl shadow-2xl shadow-bg-primary/40 ring-1 ring-text-primary/10">
               <img
                 src={founderImageSlots.heroMain}
-                alt="علي خالد عبيد — مؤسس أثر برايم"
+                alt="علي خالد عبيد — مؤسس انطلاقة"
                 loading="eager"
                 className="h-full w-full object-cover object-top transition-transform duration-700 ease-out group-hover:scale-[1.04]"
               />
@@ -110,7 +110,7 @@ const FounderHero = () => {
             {founderImageSlots.heroDetail && (
               <motion.img
                 src={founderImageSlots.heroDetail}
-                alt="تفاصيل من عمل أثر برايم"
+                alt="تفاصيل من عمل انطلاقة"
                 loading="lazy"
                 initial={{ opacity: 0, y: 24, rotate: -3 }}
                 animate={{ opacity: 1, y: 0, rotate: -4 }}
@@ -124,7 +124,7 @@ const FounderHero = () => {
                 dir="ltr"
                 className="text-[9px] font-semibold uppercase tracking-[0.3em] text-text-primary/45"
               >
-                Athar Prime
+                انطلاقة
               </span>
               <p className="mt-1 font-display text-sm font-bold text-text-primary">
                 مؤسس الشركة

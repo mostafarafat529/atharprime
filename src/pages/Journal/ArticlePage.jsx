@@ -94,14 +94,14 @@ const ArticlePage = () => {
   if (!article) {
     return (
       <main className="relative overflow-hidden bg-bg-primary">
-        <Seo title="مقال غير موجود — Athar Journal" description="المقال الذي تبحث عنه غير موجود." url={`/journal/${slug}`} />
+        <Seo title="مقال غير موجود — مجلة انطلاقة" description="المقال الذي تبحث عنه غير موجود." url={`/journal/${slug}`} />
         <div className="container-site flex min-h-[70vh] flex-col items-center justify-center pb-24 pt-32 text-center">
           <p className="font-display text-6xl font-black text-accent-soft">404</p>
           <h1 className="mt-4 font-display text-2xl font-extrabold text-text-primary">
             هذا المقال غير موجود
           </h1>
           <p className="mt-3 max-w-md text-sm leading-relaxed text-text-secondary">
-            ربما تغيّر الرابط أو حُذف المقال. يمكنك العودة إلى مجلة أثر برايم لتصفح جميع المقالات.
+            ربما تغيّر الرابط أو حُذف المقال. يمكنك العودة إلى مجلة انطلاقة لتصفح جميع المقالات.
           </p>
           <Link
             to="/journal"
@@ -118,7 +118,7 @@ const ArticlePage = () => {
   return (
     <main className="relative overflow-hidden bg-bg-primary">
       <Seo
-        title={`${article.title} — Athar Journal`}
+        title={`${article.title} — مجلة انطلاقة`}
         description={article.excerpt}
         url={`/journal/${article.slug}`}
         image={article.image}
@@ -133,7 +133,7 @@ const ArticlePage = () => {
         {/* Breadcrumb */}
         <nav aria-label="مسار التنقل" className="flex items-center gap-2 text-xs font-semibold text-text-primary/50 md:text-sm">
           <Link to="/journal" className="transition-colors duration-300 hover:text-accent-soft">
-            Athar Journal
+            مجلة انطلاقة
           </Link>
           <ChevronLeft className="h-3.5 w-3.5" aria-hidden="true" />
           <span className="text-accent-soft">{article.category}</span>
@@ -144,7 +144,7 @@ const ArticlePage = () => {
           <div className="inline-flex items-center gap-3">
             <span className="h-px w-8 bg-accent-soft" />
             <span className="text-[11px] font-semibold uppercase tracking-[0.25em] text-accent-soft" dir="ltr">
-              Athar Journal / {article.category}
+              انطلاقة / {article.category}
             </span>
           </div>
 
