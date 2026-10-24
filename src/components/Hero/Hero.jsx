@@ -49,8 +49,8 @@ const Hero = () => {
             style={{ backgroundImage: 'var(--hero-text-scrim)' }}
           />
           <motion.div variants={item} className="mb-6 flex items-center gap-4">
-            <span className="h-px w-12 bg-[var(--accent-color-strong)]" />
-            <p className="text-xs font-semibold tracking-[0.2em] text-[var(--accent-color-strong)] md:text-sm">
+            <span className="h-px w-12 bg-accent-soft" />
+            <p className="text-xs font-semibold tracking-[0.2em] text-accent-soft md:text-sm">
               مقاولات · تشطيبات · تصميم داخلي
             </p>
           </motion.div>
@@ -59,7 +59,7 @@ const Hero = () => {
             variants={item}
             className="font-display text-4xl font-extrabold leading-[1.3] text-text-primary sm:text-5xl md:text-6xl md:leading-[1.22] lg:text-7xl"
           >
-            نصنع المساحات التي تترك <span className="text-[var(--accent-color-strong)]">انطلاقة</span>
+            نصنع المساحات التي تترك <span className="text-accent-soft">انطلاقة</span>
           </motion.h1>
         </div>
       </motion.div>
